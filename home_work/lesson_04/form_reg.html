@@ -86,10 +86,30 @@
 </fieldset>
 <fieldset>
     <legend>Данные для входа и восстановления пароля</legend>
-    <input type="text" placeholder="логин" maxlength="20" minlength="5" required pattern="[A-Za-z]">text: Только латиница без пробелов, не менее 5 символов,
+    <input type="text" placeholder="логин" maxlength="20" minlength="5" required pattern="[A-Za-z]">text: Только
+    латиница без пробелов, не менее 5 символов,
     длина поля 20,обязательное поле.<br>
-    <input type="password" placeholder="пароль">
-
+    <input type="password" autocomplete="off" placeholder="пароль" minlength="10" maxlength="20" pattern="[A-Za-z]">password: Только
+    латиница, без пробелов, не менее 10 символов, длина поля
+    20, обязательное поле, отключить автозаполнение.
+</fieldset>
+<fieldset>
+    <legend>Координаты</legend>
+    <input type="email" placeholder="введите адрес почты">email: проверка должна проводиться при помощи новых атрибутов
+    тега &lt;input&gt;
+    <input type="url" placeholder="введите адрес сайта">url: проверка должна проводиться при помощи новых атрибутов
+    тега &lt;input&gt;
+</fieldset>
+<fieldset>
+    <legend>Цифры</legend>
+    <input type="number" min="-2.5" max="2.5" step="0.1">number: Диапазон от -2.5 до 2.5  с шагом 0.1<br>
+    <input type="range" min="1" max="10" step="-1">range: Максимальное 10, минимальное 1
+</fieldset>
+<fieldset>
+    <legend>Кнопки управления</legend>
+    <input type="button" value="Отправить">
+    <input type="button" value="Сбросить"><br>
+    <input type="image" src="email.jpg" alt="почта"> - при нажатии на кнопку ничего не происходит
 </fieldset>
 </body>
 </html>

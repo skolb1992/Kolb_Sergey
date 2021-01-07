@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Заполните анкету</h1>
+<fieldset>
+    <legend>Личные данные</legend>
+    <input type="text" value="Фамилия" autofocus required maxlength="25"
+    pattern="[А-Яа-яЁё]">text: Только кириллица, без пробелов, длина поля 25,
+     обязательное поле, автофокус на данном поле)<br>
+    <input type="text" value="Имя" required maxlength="20" pattern="[А-Яа-яЁё]">text: Только кириллица, без пробелов,
+    длина поля 20, обязательное поле)<br>
+    <input type="text" value="Отчество" required maxlength="24" pattern="[А-Яа-яЁё]">text: Только кириллица,
+    без пробелов, длина поля 24, обязательное поле)
+    <fieldset>
+        <legend>Пасспортныве данные</legend>
+        text: Серия - только заглавные две латинские буквы с длинной 2 и
+        максимальным количеством символов 2, количество букв не менее 2, обязательное поле<br>
+        text: Номер пасспорта - только только цифры с длиною 7 и максимальным количесвом символов 7, количество цифр не менее 7,
+        обязательное поле<br>
+        <input type="text" value="AA" size="2" pattern="[A-Z]" maxlength="2" minlength="2" required><input type="text" value="1234567" maxlength="7"
+    pattern="[0-9]{7}" required minlength="7">
+    </fieldset>
+    <fieldset>
+        <legend>Дата рождения</legend>
+        <input type="text" size="4" pattern="[0-9]{4}">text: Год рождения 4 цифры<br>
+        <select>
+            <option>январь</option>
+            <option>февраль</option>
+            <option>март</option>
+            <option>апрель</option>
+            <option>май</option>
+            <option>июнь</option>
+            <option>июль</option>
+            <option>август</option>
+            <option>сентябрь</option>
+            <option>октябрь</option>
+            <option>ноябрь</option>
+            <option>декабрь</option>
+        </select>select: месяц день рождения
+        <input type="number" min="1" max="31">
+    </fieldset>
+    <select required>
+        <option>РБ</option>
+        <option>РФ</option>
+        <option>КЗ</option>
+        <option>УКР</option>
+    </select>(Национальность - выбор одного значения из списка, обязательное поле)<br>
+    Адрес:<br>
+    <textarea cols="15"></textarea>
+</fieldset>
+<fieldset>
+    <legend>Интересы</legend>
+    <fieldset>
+        <legend>array: Хобби</legend>
+        <input type="checkbox" value="1">Рыбалка<br>
+        <input type="checkbox" value="2">Астрономия<br>
+        <input type="checkbox" value="3">Дайвинг<br>
+        <input type="checkbox" value="4">Марки<br>
+    </fieldset>
+    <fieldset>
+        <legend>Домашние животные, возможность выбора более одного варианта</legend>
+        array: Select multiple<br>
+        </select>
+        <select multiple size="12">
+            <optgroup label="Попугаи">
+                <option>Волнистый</option>
+                <option>Ара</option>
+                <option>Неразлучник</option>
+            </optgroup>
+            <optgroup label="Рыба">
+                <option>Караси</option>
+                <option>Окуни</option>
+                <option>Осетр</option>
+            </optgroup>
+            <optgroup label="Птица">
+                <option>Стая ворон</option>
+                <option>Аист</option>
+                <option>Археоптерикс</option>
+            </optgroup>
+        </select>
+    </fieldset>
+</fieldset>
+<fieldset>
+    <legend>Данные для входа и восстановления пароля</legend>
+    <input type="text" placeholder="логин" maxlength="20" minlength="5" required pattern="[A-Za-z]">text: Только латиница без пробелов, не менее 5 символов,
+    длина поля 20,обязательное поле.<br>
+    <input type="password" placeholder="пароль">
+
+</fieldset>
+</body>
+</html>

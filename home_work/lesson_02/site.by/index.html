@@ -3,70 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        ul li2 + li2:before{content:"|"}
-    </style>
 </head>
 <body>
 <h1>Горизонтальное меню</h1>
-<ul>
-    <li2><a href="index.html"><u>Главная</u></a></li2>
-    <li2><a href="catalog.html"><u>Каталог</u></a></li2>
-    <li2><a href="promo.html"><u>Акции</u></a></li2>
-    <li2><a href="about.html"><u>О нас</u></a></li2>
-</ul>
+<p>
+    <a href="index.html">Главная</a>|
+    <a href="catalog.html">Каталог</a>|
+    <a href="promo.html">Акции</a>|
+    <a href="about.html">О нас</a>
+</p>
 <h1>Меню список</h1>
-<ul><u>
-    <li><a href="index.html">Главная</a> </li>
-    <li><a href="catalog.html">Каталог</a> </li>
-    <li><a href="promo.html">Акции</a> </li>
-    <li><a href="about.html">О нас</a> </li>
-</u></ul>
-<h1>Меню с вложенным списком</h1>
-<ul><u>
-        <li><a href="index.html">Главная</a></li>
-    <ul>
-        <li><a href="news/news.html">Новости</a></li>
-    </ul>
-    <li><a href="catalog.html">Каталог</a> </li>
-    <ul>
-        <li><a href="catalog/a_w.html">Осень-Зима</a> </li>
-        <li><a href="catalog/s_s.html">Весна-Лето</a> </li>
-    </ul>
+<ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog.html">Каталог</a></li>
     <li><a href="promo.html">Акции</a></li>
-    <ul>
-        <li><a href="promo/last.html">Актуальные</a> </li>
-        <li><a href="promo/old.html">Прошедшие</a> </li>
-    </ul>
-    <li><a href="about.html">О нас</a> </li>
-    <ul>
-        <li><a href="about/contacts.html">Контакты</a> </li>
-        <li><a href="about/scheme.html">Проезд</a> </li>
-    </ul>
-</u></ul>
+    <li><a href="about.html">О нас</a></li>
+</ul>
+<h1>Меню с вложенным списком</h1>
+<ul>
+    <li>
+        <a href="index.html">Главная</a>
+        <ul>
+            <li><a href="news/news.html">Новости</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="catalog.html">Каталог</a>
+        <ul>
+            <li><a href="catalog/a_w.html">Осень-Зима</a></li>
+            <li><a href="catalog/s_s.html">Весна-Лето</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="promo.html">Акции</a>
+        <ul>
+            <li><a href="promo/last.html">Актуальные</a></li>
+            <li><a href="promo/old.html">Прошедшие</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="about.html">О нас</a>
+        <ul>
+            <li><a href="about/contacts.html">Контакты</a></li>
+            <li><a href="about/scheme.html">Проезд</a></li>
+        </ul>
+    </li>
+</ul>
 <h1>Меню таблица с вложенными таблицами</h1>
-<table><u>
-    <tr><a href="index.html">Главная</a>
-        <td><a href="news/news.html">Новости</a></td>
+<table>
+    <tr>
+        <td><a href="index.html">Главная</a>
+            <table>
+                    <tr>
+                        <td><a href="news/news.html">Новости</a></td>
+                    </tr>
+            </table>
+        </td>
     </tr>
-</u></table>
-<table><u>
-    <tr><a href="catalog.html">Каталог</a>
-        <td><a href="catalog/a_w.html">Осень-Зима</a><br>
-        <a href="catalog/s_s.html">Весна-Лето</a></td>
+</table>
+<table>
+    <tr>
+        <td><a href="catalog.html">Каталог</a>
+            <table>
+                <tr>
+                    <td><a href="catalog/a_w.html">Осень-Зима</a></td>
+                </tr>
+                <tr>
+                    <td><a href="catalog/s_s.html">Весна-Лето</a></td>
+                </tr>
+            </table>
+        </td>
     </tr>
-</u></table>
-<table><u>
-    <tr><a href="promo.html">Акции</a>
-        <td><a href="promo/last.html">Актуальные</a><br>
-            <a href="promo/old.html">Прошедшие</a> </td>
+</table>
+<table>
+    <tr>
+        <td><a href="promo.html">Акции</a>
+            <table>
+                <tr>
+                    <td><a href="promo/last.html">Актуальные</a></td>
+                </tr>
+                <tr>
+                    <td><a href="promo/old.html">Прошедшие</a></td>
+                </tr>
+            </table>
+        </td>
     </tr>
-</u></table>
-<table><u>
-    <tr><a href="about.html">О нас</a>
-        <td><a href="about/contacts.html">Контакты</a><br>
-            <a href="about/scheme.html">Проезд</a> </td>
+</table>
+<table>
+    <tr>
+        <td><a href="about.html">О нас</a>
+            <table>
+                <tr>
+                    <td><a href="about/contacts.html">Контакты</a></td>
+                </tr>
+                <tr>
+                    <td><a href="about/scheme.html">Проезд</a></td>
+                </tr>
+            </table>
+        </td>
     </tr>
-</u></table>
+</table>
 </body>
 </html>

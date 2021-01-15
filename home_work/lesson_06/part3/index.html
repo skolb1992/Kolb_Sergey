@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .article{background-color: dimgrey; margin-bottom: .2em; background-size: cover}
+        .bod{width: 100%; height: 100%; margin: 1em}
+        .article{background: dimgrey; margin-bottom: .2em;  float: left; width: calc(98% - 15em)}
     </style>
 </head>
-<body>
+<body class="bod">
 <div style="background-color: darkgrey; width: 15em; float: left">
     <h3>Блок навигации</h3>
     <ul>
-        <li>Ширина 15ет</li>
+        <li>Ширина 15em</li>
         <li>Должен присутствовать цвет фона</li>
         <li>Располагается слева</li>
         <li>Блок навигации наполните
@@ -29,15 +30,16 @@
 Должен присутствовать цвет фона
 Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom</p>
 </div>
-<div class="article"><img alt="img" src="icon_mail.png" style="float: right">
+<div class="article">
     <h3>Статья 2</h3>
-    <pre style="font-size: 15px">Размер блока:
+    <p style="font-size: 15px">Размер блока:
 Занимает всю доступную ширину Должен присутствовать цвет фона
 Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи
 свойства margin-bottom Картинка вставленна при помощи тега, плавание
-организованно по правому краю внутри данной статьи для этой картинки</pre>
+организованно по правому краю внутри данной статьи для этой картинки
+<img alt="img" src="icon_mail.png" style="float: right"></p>
 </div>
-<div style="background-color: darkgrey; clear: both; width: 100%">
+<div style="background-color: darkgrey; clear: both; width: 98%">
     <p style="font-size: 15px">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
 </div>
 </body>

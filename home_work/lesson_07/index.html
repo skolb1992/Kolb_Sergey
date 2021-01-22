@@ -6,14 +6,17 @@
 </head>
 <style>
     ul{
-        justify-content: center;
+        padding: 0;
+        margin-left: 0;
+    }
+    .menu > ul{
         display: flex;
     }
-    ul li{
+    .menu ul li{
         list-style: none;
         width: calc(100%/6);
     }
-    a{
+    .menu > ul li a{
         border: 3px solid black;
         display: block;
         background: darkgrey;
@@ -24,24 +27,23 @@
         text-transform:uppercase;
         transition: all 0.5s ease;
     }
-    ul li a:hover{
+    .menu li a:hover{
         background: #454547;
         color: #ffffff;
         transition: all 0.5s ease;
-
         }
-    li ul{
+    .menu li ul{
         position: absolute;
         min-width: 100%;
         display: none;
     }
-    li:hover > ul{
+    .menu li:hover > ul{
         display: block;
     }
 </style>
 <body>
 <header>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="#">понедельник</a>
                 <ul>
@@ -55,19 +57,22 @@
                     <li><a href="#">Завтрак</a></li>
                     <li><a href="#">Обед</a></li>
                     <li><a href="#">Ужин</a></li>
-                </ul></li>
+                </ul>
+            </li>
             <li><a href="#">среда</a>
                 <ul>
                     <li><a href="#">Завтрак</a></li>
                     <li><a href="#">Обед</a></li>
                     <li><a href="#">Ужин</a></li>
-                </ul></li>
+                </ul>
+            </li>
             <li><a href="#">четверг</a>
                 <ul>
                     <li><a href="#">Завтрак</a></li>
                     <li><a href="#">Обед</a></li>
                     <li><a href="#">Ужин</a></li>
-                </ul></li>
+                </ul>
+            </li>
             <li><a href="#">пятница</a>
                 <ul>
                     <li><a href="#">Завтрак</a></li>
@@ -79,7 +84,8 @@
                     <li><a href="#">Завтрак</a></li>
                     <li><a href="#">Обед</a></li>
                     <li><a href="#">Ужин</a></li>
-                </ul></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>

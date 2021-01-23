@@ -33,13 +33,16 @@
         color: #ffffff;
         transition: all 0.5s ease;
         }
+    /*Вот тут изменения для плавного раскрытия*/
     .menu li ul{
         position: absolute;
         min-width: 100%;
-        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
     }
     .menu li:hover > ul{
-        display: block;
+        height: 200px;
     }
     @media all and (max-width: 1120px) {
         .menu > ul{
